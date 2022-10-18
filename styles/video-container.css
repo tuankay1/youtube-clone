@@ -1,0 +1,16 @@
+.container-iframe {
+    width: 330px;
+    height: 210px;
+}
+.video-container {
+    width: 340px;
+    height: 220px;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
