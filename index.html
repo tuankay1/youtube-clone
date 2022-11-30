@@ -14,6 +14,30 @@
     <link rel="stylesheet" href="styles/video-container.css">
 </head>
 <body>
+    <div class="phone-header">
+        <div class="left-section">
+            <img class="youtube-logo" src="icons/youtube-logo.svg">
+        </div>
+        <div class="right-section">
+            <button class="upload-button">
+                <img src="icons/upload.svg" class="upload-icon">
+                <div class="tooltip">Create</div>
+            </button>
+            <button class="notification-button">
+                <img src="icons/notifications.svg" class="notification-icon">
+                <div class="notification-count">3</div>
+                <div class="tooltip">Notifications</div>
+            </button>
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="profile-button">
+                <img src="channel-pictures/my-channel.jpeg" class="profile-icon">
+                <div class="tooltip">Profile</div>
+            </button>
+        </div>
+    </div>
     <header>
         <div class="left-section">
             <img class="hamburger-menu" src="icons/hamburger-menu.svg">
@@ -96,7 +120,7 @@
                         Talking Tech and AI with Google CEO Sundar Pichai!
                     </p>
                     <p class="video-author">
-                        Marques Brownlee
+                        Marques Brownlee &#183; <span>3.4m views &#183; 6 months ago</span>
                     </p>
                     <p class="video-stats">
                         3.4m views &#183; 6 months ago
@@ -120,7 +144,7 @@
                         Talking Tech and AI with Google CEO Sundar Pichai!
                     </p>
                     <p class="video-author">
-                        Marques Brownlee
+                        Marques Brownlee &#183; <span>3.4m views &#183; 6 months ago</span>
                     </p>
                     <p class="video-stats">
                         3.4m views &#183; 6 months ago
@@ -144,7 +168,7 @@
                         Talking Tech and AI with Google CEO Sundar Pichai!
                     </p>
                     <p class="video-author">
-                        Marques Brownlee
+                        Marques Brownlee &#183; <span>3.4m views &#183; 6 months ago</span>
                     </p>
                     <p class="video-stats">
                         3.4m views &#183; 6 months ago
@@ -168,7 +192,7 @@
                         Talking Tech and AI with Google CEO Sundar Pichai!
                     </p>
                     <p class="video-author">
-                        Marques Brownlee
+                        Marques Brownlee &#183; <span>3.4m views &#183; 6 months ago</span>
                     </p>
                     <p class="video-stats">
                         3.4m views &#183; 6 months ago
@@ -192,7 +216,7 @@
                         Talking Tech and AI with Google CEO Sundar Pichai!
                     </p>
                     <p class="video-author">
-                        Marques Brownlee
+                        Marques Brownlee &#183; <span>3.4m views &#183; 6 months ago</span>
                     </p>
                     <p class="video-stats">
                         3.4m views &#183; 6 months ago
@@ -200,17 +224,33 @@
                 </div>
             </div>   
         </section>
-        <div class="items">
-            <div class="tra">
-                
-            </div>
-        </div>
     </main>
 </div>
-<h1></h1>
-<video src=""></video>
+<footer class="footer">
+    <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>Shorts</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+    </div>
+</footer>
+
 <!-- video container -->
-<div class="video-container">
+<div id="video-container" class="video-container">
     <div class="container-iframe">
         <iframe width="100%" height="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
     </div>

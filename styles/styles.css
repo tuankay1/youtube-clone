@@ -17,11 +17,10 @@ p {
 }
 
 /* header styles */
-header{
+header, .phone-header{
     height: 55px;
     background: white;
     border-bottom: 1px solid rgb(228, 228, 228);
-    display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
@@ -30,6 +29,15 @@ header{
     left: 0;
     right: 0;
     z-index: 100;
+}
+header {
+    display: none;
+}
+.phone-header {
+    display: flex;
+}
+.phone-header .left-section {
+    margin-left: 20px;
 }
 .left-section,
 .middle-section,
@@ -151,8 +159,7 @@ header{
     height: 100%;
 }
 .bars-video {
-    display: grid;
-    grid-template-columns:72px 1fr;
+    display: block;
     position: relative;
     top: 55px;
 }
@@ -166,8 +173,9 @@ header{
     padding-top: 5px;
     top: 55px;
     z-index: 200;
+    display: none;
 }
-.sidebar .sidebar-link {
+.sidebar-link {
     height: 74px;
     display: flex;
     flex-direction: column;
@@ -175,24 +183,21 @@ header{
     align-items: center;
     cursor: pointer;
 }
-.sidebar .sidebar-link:hover {
+.sidebar-link:hover {
     background-color: rgb(235, 235, 235);
   }
-.sidebar .sidebar-link img {
+.sidebar-link img {
     height: 24px;
     margin-bottom: 4px;
 }
-.sidebar .sidebar-link > div {
+.sidebar-link > div {
     font-size: 10px;
 }
 
 /* main section */
 .video-section{
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     padding: 20px;
-    column-gap: 20px;
 }
 .items {
     position: relative;
@@ -230,16 +235,17 @@ header{
     border-radius: 50px;
 }
 .video-title {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .video-author{
-    font-size: 12px;
+    font-size: 13px;
     color: rgb(96, 96, 96);
     margin-bottom: 4px;
 }
 .video-stats {
+    display: none;
     font-size: 12px;
     color: rgb(96, 96, 96);
 }
@@ -265,12 +271,35 @@ header{
     visibility: hidden;
     position: absolute;
     z-index: 1;
-    /* left: 40%;
-    top: 28%; */
+    left: 50%;
+    top: 40%;
     border-style: solid;
     border-width:30px 0px 30px 30px;
     border-color: transparent transparent transparent #fff;
 }
 .thumbnails:hover .play{
     visibility: visible;
+}
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    background: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 3px;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    
+}
+.footer .sidebar-link {
+    height: 54px;
+    display: inline-flex;
+    flex-direction: column;
+    cursor: pointer;
 }
